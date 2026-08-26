@@ -9,18 +9,17 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
-# Compilation du noeud C++ de demarche
-add_executable(hexapod_gait_node src/hexapod_gait_node.cpp)
-ament_target_dependencies(hexapod_gait_node rclcpp sensor_msgs)
+# Compilation du nœud C++
+add_executable(my_hexapod_node src/myHexapod.cpp)
+ament_target_dependencies(my_hexapod_node rclcpp sensor_msgs)
 
-install(
-  DIRECTORY config launch meshes urdf textures
-  DESTINATION share/${PROJECT_NAME}
+# Installation de l'exécutable et des dossiers du package
+install(TARGETS my_hexapod_node
+  DESTINATION lib/${PROJECT_NAME}
 )
 
-install(TARGETS
-  hexapod_gait_node
-  DESTINATION lib/${PROJECT_NAME}
+install(DIRECTORY launch urdf meshes config textures
+  DESTINATION share/${PROJECT_NAME}
 )
 
 ament_package()
