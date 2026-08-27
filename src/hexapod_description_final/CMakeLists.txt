@@ -18,7 +18,7 @@ install(TARGETS my_hexapod_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
-install(DIRECTORY launch urdf meshes config textures
+install(DIRECTORY launch urdf meshes config
   DESTINATION share/${PROJECT_NAME}
 )
 
