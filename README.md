@@ -102,7 +102,7 @@ Pour éviter les secousses lors des pas, la trajectoire en phase d'envol suit un
 
 $$B(t) = (1-t)^2 P_1 + 2(1-t)t P_2 + t^2 P_3 \quad \text{avec } t \in [0, 1]$$
 
-> **[Insérer ici ton schéma Bézier / Single Leg Motion]**
+> **[Insérer schéma Bézier / Single Leg Motion]**
 
 ### 2. Transposition du repère Châssis vers les Pattes
 Pour calculer le mouvement des 6 pattes, on applique une matrice de rotation $ROT(\beta)$ et un décalage physique $X_{start}$ selon l'orientation de chaque patte sur le châssis :
