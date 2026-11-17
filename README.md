@@ -109,7 +109,7 @@ Pour calculer le mouvement des 6 pattes, on applique une matrice de rotation $RO
 
 $$\begin{bmatrix} X \\ Y \\ Z \end{bmatrix}_{\text{patte}} = [ROT(\beta)] \times \begin{bmatrix} X \\ Y \\ Z \end{bmatrix}_{\text{châssis}} + \begin{bmatrix} X_{start} \\ 0 \\ 0 \end{bmatrix}$$
 
-> **[Insérer ici ton schéma Repère O-Frame vers Pattes]**
+> **[Ne pas oublier schéma Repère O-Frame vers Pattes]**
 
 ### 3. Modes de Déplacement
 * **Marche Tripode (Tripod Gait) :** Alternance de 2 groupes de 3 pattes pour une marche rapide.
@@ -117,7 +117,7 @@ $$\begin{bmatrix} X \\ Y \\ Z \end{bmatrix}_{\text{patte}} = [ROT(\beta)] \times
 * **Rotation sur Place :** Mouvement opposé (Drag/Swing) entre les deux groupes de pattes.
 * **Virage / Steering (ICC) :** Calcul de trajectoires en arc de cercle autour d'un centre instantané de rotation ($R_{ICC}$).
 
-> **[Insérer ici ton schéma Steering ICC]**
+> **[schéma Steering ICC]**
 
 ---
 
@@ -135,4 +135,4 @@ Chaque servo est calibré pour convertir l'angle théorique de l'IK en valeur PW
 | **Joint 2 (Femur)** | MG996R | $-90^\circ \text{ à } +90^\circ$ | $0^\circ \text{ à } 180^\circ$ | $800 \text{ à } 2200$ |
 | **Joint 3 (Tibia)** | MG996R | $-180^\circ \text{ à } 0^\circ$ | $0^\circ \text{ à } 180^\circ$ | $800 \text{ à } 2200$ |
 
-> **[Insérer ici ton schéma de calibration Servo]**
+> **[Insérer schéma de calibration Servo]**
